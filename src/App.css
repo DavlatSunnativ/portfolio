@@ -1,0 +1,250 @@
+@font-face {
+  font-family: Centra;
+  src: url('./assets/fonts/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url('./assets/fonts/CentraNo2-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;  
+  src: url('./assets/fonts/CentraNo2-Book.ttf');
+  font-weight: 400;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255) !important;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-weight: 500;
+  background-color: #121212 !important;
+  background-image: url('img/banner.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: top;
+}
+.navbar {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #121212;
+  top: 0;
+}
+
+.nav-link{
+  color: white;
+  opacity: 0.55 !important;
+  transition: opacity 0.3s ease;
+  font-weight: 400;
+  font-size: 17px;
+}
+#logo{
+  max-width: 13%;
+}
+.nav-link:hover{
+  opacity: 1 !important;
+}
+
+section, .row, .col-lg-7, .col-lg-5 {
+  max-width: 100%;
+  margin-top: 40px;
+  
+}
+
+
+
+#Davlat {
+  font-weight: 700;
+  background: linear-gradient(to right, #502F4C, #70587C) !important; 
+  -webkit-background-clip: text !important; 
+  -webkit-text-fill-color: transparent !important; 
+  color: transparent !important; 
+}
+
+.minion{
+  margin-top: 50px;
+
+  width: 80%;
+}
+
+
+h1{ 
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+p{
+  max-width: 560px;
+  font-size: 18px;
+  color: #9e7fad91 !important;
+  text-align: center;
+}
+button:hover{
+  border:1px #121212;
+  color: #000;
+}
+.symbol{
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.section-header{
+  margin-top: 150px;
+}
+
+@property --angle{
+  syntax:"<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  background-color: #121212;
+  filter: blur(1px);
+  border-radius: 5%;
+  z-index: -2;  
+}
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  background-color: #121212;
+  border: 1px #70587C;
+  filter: blur(1px);
+  border-radius: 5%;
+  z-index: -2;  
+}
+.card::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border-radius: 2%;
+  background: conic-gradient(from var(--angle), transparent, #502F4C, #70587C);
+  animation: 7.5s spin linear infinite;
+  z-index: -3;
+}
+
+.contact-card::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border-radius: 2%;
+  background: conic-gradient(from var(--angle), transparent, #6c00ef4a, #5f397ebf,transparent);
+  animation: 30s spin linear infinite;
+  z-index: -3;
+  
+}
+
+.card {
+  width: 300px;
+  height: 225px;
+  position: relative;
+  border-radius: 4%;
+  background-color:transparent;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contact-card {
+  width: 300px;
+  height: 208px;
+  position: relative;
+  border-radius: 30px;
+  background-color:transparent;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+
+@keyframes spin {
+  from{
+    --angle:0deg;
+  }to{
+    --angle:360deg;
+  }
+}
+.card-img-top{
+  margin-left: 32.5%;
+  max-width: 35%;
+  border-radius: 8%;
+  padding: 15px;  
+  background-color: #ffffff00;  
+  z-index: 1;
+}
+.contact-card-img{
+  margin-left: 27.5%;
+  max-width: 50%;
+  padding: 15px;  
+  z-index: 1;
+}
+
+.card p{
+  color: #ffffff86 !important ;
+  padding: 10px;
+  font-size: 13px;
+}
+
+input{
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent !important;
+  padding: 15px;
+  border: 1px solid #70587C; 
+  color: #ffffff; 
+  position: relative;
+  z-index: 1;
+}
+input::placeholder{
+  color: #aaa;
+}
+
+.contact-btn{
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+.contact-btn-card:hover{
+  background-color: #7867ff4a;
+}
+.contact-btn-card{
+  margin-top: 4px;
+  margin-left: 32%;
+  width: 120px;
+}
+.contact-btn-form{
+  width: 100%;
+  margin-bottom: 250px;
+}
+.contact-btn-form:hover{
+  background-color: #70587C;
+}
+#contact{
+  margin-top: 250px;
+}
