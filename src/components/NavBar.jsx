@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logo from "../img/logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import logo from "../img/logo.png";
 
 const NavBar = ({ scrollToSection }) => {
   const [activeLink, setActiveLink] = useState("home");
@@ -31,7 +31,7 @@ const NavBar = ({ scrollToSection }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto">
             <li
-              className={`nav-item ms-5${activeLink === "home" ? "active" : ""}`}
+              className={`nav-item ms-5 ${activeLink === "home" ? "active" : ""}`}
               onClick={() => handleScroll("home")}
             >
               <a className="nav-link">Home</a>
@@ -42,7 +42,6 @@ const NavBar = ({ scrollToSection }) => {
             >
               <a className="nav-link">Skills</a>
             </li>
-            {/* Removed the Education section */}
             <li
               className={`nav-item ms-5 ${activeLink === "contact" ? "active" : ""}`}
               onClick={() => handleScroll("contact")}
