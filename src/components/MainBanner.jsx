@@ -79,10 +79,6 @@ const MainBanner = () => {
             discover how I can help bring your id eas to life with the latest web
             development tools and techniques!
           </p>
-
-          <button className="btn btn-outline-dark ps-4 pe-4 pb-2 pt-2">
-            Let's connect
-          </button>
         </div>
         <div
           className="col-lg-5 md-5 sm-12 align-items-center justify-content-center  "
